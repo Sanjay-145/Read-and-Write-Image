@@ -1,8 +1,11 @@
 # READ AND WRITE AN IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
+
 i) Read, display, and write an image.
+
 ii) Access the rows and columns in an image.
+
 iii) Cut and paste a small portion of the image.
 
 ## Software Required:
@@ -21,7 +24,7 @@ End the program and close the output image windows.
 ## Program:
 ### Developed By:P.Sanjay 
 ### Register Number: 212220230042
-i) #To Read,display the image
+### i)To Read,display the image
 ```
 import cv2
 color_image=cv2.imread('acd.jpeg',1)
@@ -30,7 +33,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ```
-ii) #To write the image
+### ii)To write the image
 ```
 cv2.imwrite('adc.jpeg',color_image)
 cv2.imshow('academia Image',color_image)
@@ -40,7 +43,7 @@ cv2.destroyAllWindows()
 
 
 ```
-iii) #Find the shape of the Image
+### iii)Find the shape of the Image
 ```
 import cv2
 color_image=cv2.imread('acd.jpeg',-1)
@@ -49,7 +52,7 @@ print(color_image.shape)
 
 
 ```
-iv) #To access rows and columns
+### iv)To access rows and columns
 
 ```
 import cv2
@@ -65,7 +68,7 @@ cv2.destroyAllWindows()
 
 
 ```
-v) #To cut and paste portion of image
+### v)To cut and paste portion of image
 ```
 cut=color_image[260:280,100:300]
 color_image[60:80,100:300]=cut
